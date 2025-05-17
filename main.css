@@ -1,0 +1,510 @@
+:root {
+    --color-gray: #f1f1f1;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+  }
+  /*nav*/
+  .navbar {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .navbar .nav-link,
+  .navbar .navbar-brand {
+    transition: color 0.3s;
+  }
+  /*home*/
+  #home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #home .list-unstyled a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid black;
+  }
+  
+  .home-inner p.animate::after {
+    content: "";
+    animation: type 5s infinite;
+  }
+  @keyframes type {
+    1% {
+      content: "L|";
+    }
+    3% {
+      content: "La|";
+    }
+    5% {
+      content: "Lar|";
+    }
+    7% {
+      content: "Larry|";
+    }
+    9% {
+      content: "Larry |";
+    }
+    11% {
+      content: "Larry D|";
+    }
+    13% {
+      content: "Larry Da|";
+    }
+    15% {
+      content: "Larry Dan|";
+    }
+    17% {
+      content: "Larry Dani|";
+    }
+    19% {
+      content: "Larry Danie|";
+    }
+    21% {
+      content: "Larry Daniel|";
+    }
+    23% {
+      content: "Larry Daniels|";
+    }
+    25% {
+      content: "Larry Daniel|";
+    }
+    27% {
+      content: "Larry Danie|";
+    }
+    29% {
+      content: "Larry Dani|";
+    }
+    31% {
+      content: "Larry Dan|";
+    }
+    33% {
+      content: "Larry Da|";
+    }
+    35% {
+      content: "Larry D|";
+    }
+    37% {
+      content: "Larry |";
+    }
+    39% {
+      content: "Larry|";
+    }
+    41% {
+      content: "Lar|";
+    }
+    43% {
+      content: "La|";
+    }
+    45% {
+      content: "L|";
+    }
+    47% {
+      content: "|";
+    }
+    49% {
+      content: "D|";
+    }
+    51% {
+      content: "De|";
+    }
+    53% {
+      content: "Dev|";
+    }
+    55% {
+      content: "Deve|";
+    }
+    57% {
+      content: "Devel|";
+    }
+    59% {
+      content: "Develo|";
+    }
+    61% {
+      content: "Develop|";
+    }
+    63% {
+      content: "Develope|";
+    }
+    65% {
+      content: "Developer|";
+    }
+    67% {
+      content: "Develope|";
+    }
+    69% {
+      content: "Develop|";
+    }
+    71% {
+      content: "Develo|";
+    }
+    73% {
+      content: "Devel|";
+    }
+    75% {
+      content: "Deve|";
+    }
+    77% {
+      content: "Dev|";
+    }
+    79% {
+      content: "De|";
+    }
+    81% {
+      content: "D|";
+    }
+    83% {
+      content: "|";
+    }
+    85% {
+      content: "D|";
+    }
+    87% {
+      content: "De|";
+    }
+    89% {
+      content: "Des|";
+    }
+    91% {
+      content: "Desi|";
+    }
+    93% {
+      content: "Desig|";
+    }
+    95% {
+      content: "Design|";
+    }
+    97% {
+      content: "Designe|";
+    }
+    99% {
+      content: "Designer|";
+    }
+    100% {
+      content: "Designer|";
+    }
+  }
+  
+  /*about*/
+  #about {
+    background-color: white;
+  }
+  #about:has(.navbar) .navbar {
+    background-color: white;
+    color: black;
+  }
+  
+  #about:has(.navbar) .navbar .nav-link,
+  #about:has(.navbar) .navbar .navbar-brand {
+    color: black;
+  }
+  .imgs img {
+    width: 300px;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .button1 {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+  }
+  .button1:hover {
+    background-color: white;
+    transition: 0.5s;
+    color: black;
+    border: 2px solid black;
+  }
+  .button2 {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  .button2:hover {
+    background-color: black;
+    transition: 0.5s;
+    color: white;
+  }
+  .progress-bar {
+    position: relative;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .image::before {
+    content: "";
+    position: absolute;
+    top: 140%;
+    left: 50px;
+    width: 500px;
+    height: 450px;
+    background: radial-gradient(#ccc 2px, transparent 2px);
+    background-size: 10px 10px;
+    z-index: 1;
+    opacity: 50%;
+  }
+  
+  .profile-image {
+    position: relative;
+    z-index: 2;
+    display: block;
+  }
+  /*services*/
+  #services {
+    background-color: var(--color-gray);
+  }
+  #services:has(.navbar) .navbar {
+    background-color: white;
+    color: black;
+  }
+  
+  #services:has(.navbar) .navbar .nav-link,
+  #services:has(.navbar) .navbar .navbar-brand {
+    color: black;
+  }
+  .word::before {
+    opacity: 40%;
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background: radial-gradient(#ccc 2px, transparent 2px);
+    background-size: 10px 10px;
+    z-index: 1;
+  }
+  #services .icon-container {
+    color: black;
+    border-radius: 50%;
+    border: 1px solid var(--color-gray);
+    background-color: var(--color-gray);
+  }
+  #services .card {
+    border: var(--color-gray);
+    box-shadow: 2px;
+  }
+  #services .card:hover .icon-container {
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+  }
+  /*Portfolio*/
+  #Portfolio {
+    background-color: white;
+  }
+  #Portfolio:has(.navbar) .navbar {
+    background-color: white;
+    color: black;
+  }
+  
+  #Portfolio:has(.navbar) .navbar .nav-link,
+  #Portfolio:has(.navbar) .navbar .navbar-brand {
+    color: black;
+  }
+  .layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.407);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: 0.3s ease;
+    opacity: 0;
+  }
+  .inner-work:hover .layer {
+    opacity: 1;
+  }
+  .inner-work img {
+    transition: 0.3;
+  }
+  .inner-work:hover img {
+    transform: scale(1);
+    padding: 0;
+  }
+  .layer-cotent {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+  }
+  #work .list-unstyled:hover i {
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+  }
+  /*client*/
+  #client {
+    background-color: var(--color-gray);
+  }
+  #client:has(.navbar) .navbar {
+    background-color: white;
+    color: black;
+  }
+  
+  #client:has(.navbar) .navbar .nav-link,
+  #client:has(.navbar) .navbar .navbar-brand {
+    color: black;
+  }
+  #client img {
+    width: 100px;
+  }
+  .icons i {
+    width: 30px;
+    height: 30px;
+    padding-top: 8px;
+    color: black;
+  }
+  .icons i:hover {
+    color: gray;
+    transition: 0.5s;
+  }
+  #client .carousel-indicators button {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .carousel-indicators {
+    bottom: -50;
+    color: gray;
+  }
+  /*components*/
+  #components .icon-com {
+    height: 100px;
+    width: 100px;
+  }
+  /*team*/
+  #team {
+    background-color: var(--color-gray);
+  }
+  #team:has(.navbar) .navbar {
+    background-color: white;
+    color: black;
+  }
+  #team:has(.navbar) .navbar .nav-link,
+  #team:has(.navbar) .navbar .navbar-brand {
+    color: black;
+  }
+  .card .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.832);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  .card:hover .over {
+    display: flex;
+  }
+  .card {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+  }
+  .card-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .card-img-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+  }
+  .card-img-container:hover .over {
+    opacity: 2;
+    visibility: visible;
+  }
+  .card-img-container:hover .card-img-top{
+    padding: 10px;
+    transform: scale(0.9);
+    transition:all 0.4s  ease 0s;
+  }
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    display: block;
+   
+  }
+  .icon i {
+    color: white;
+    background-color: black;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .icon i:hover {
+    transform: scale(1.2);
+    color: black;
+    background-color: white;
+  }
+  .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  .card-body {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 15px;
+  }
+  /* contact */
+  .first-two input {
+    width: 35%;
+  }
+  .form-floating {
+    width: 70%;
+  }
+  .form-control:focus {
+    border-color: var(--color-gray);
+    box-shadow: none;
+  }
+  .form-control {
+    background-color: var(--color-gray);
+    padding: 0.375rem 0.75rem;
+  
+    border-radius: 10px;
+  }
+  .contact .btn:hover {
+    background-color: var(--color-gray);
+  }
+  .icon2 {
+    color: black;
+    background-color: var(--color-gray);
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  #contact .inner:hover .icon2 {
+    color: var(--color-gray);
+    transform: scale(1.2);
+    background-color: black;
+  }
+  
