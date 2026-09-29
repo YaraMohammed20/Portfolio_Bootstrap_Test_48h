@@ -508,3 +508,496 @@
     background-color: black;
   }
   
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 991.98px) {
+
+  /* Navbar */
+  .navbar .container {
+    gap: 0 !important;
+  }
+
+  .navbar-collapse {
+    background-color: white;
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .navbar-collapse .nav-link,
+  .navbar-collapse .navbar-brand {
+    color: black !important;
+  }
+
+  .navbar-collapse .nav-link.active {
+    color: black !important;
+  }
+
+  /* Home */
+  #home {
+    min-height: 100vh;
+  }
+
+  .home-inner h1 {
+    font-size: 42px !important;
+  }
+
+  .home-inner p {
+    font-size: 28px !important;
+  }
+
+  /* About */
+  #about {
+    min-height: auto;
+    padding: 100px 0;
+  }
+
+  .image {
+    margin-bottom: 50px;
+  }
+
+  .image::before {
+    top: 80%;
+    left: 20px;
+    width: 350px;
+    height: 350px;
+  }
+
+  .imgs img {
+    width: 100%;
+  }
+
+  /* Services */
+  #services {
+    height: auto !important;
+    min-height: 100vh;
+    padding: 100px 0;
+  }
+
+  #services .row {
+    flex-direction: row !important;
+  }
+
+  .samlly {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #services .card {
+    width: 18rem !important;
+  }
+
+  /* Portfolio */
+  #work {
+    padding-top: 100px !important;
+  }
+
+  /* Testimonials */
+  #client {
+    min-height: auto;
+    padding: 100px 20px;
+  }
+
+  /* Statistics */
+  #components {
+    padding: 50px 20px;
+  }
+
+  #components > div {
+    flex-wrap: wrap !important;
+    gap: 30px !important;
+  }
+
+  .inn {
+    width: 40%;
+  }
+
+  /* Team */
+  #team {
+    height: auto !important;
+    padding: 100px 0;
+  }
+
+  .card-group {
+    gap: 25px;
+  }
+
+  .card {
+    width: 280px;
+  }
+
+  /* Contact */
+  #contact {
+    padding: 80px 20px !important;
+  }
+
+  .first-two {
+    flex-wrap: wrap !important;
+  }
+
+  .first-two input {
+    width: 50%;
+  }
+
+  .form-floating {
+    width: 100%;
+  }
+}
+
+
+/* =========================
+   Phone
+========================= */
+
+@media (max-width: 767.98px) {
+
+  /* General */
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-brand {
+    font-size: 22px;
+  }
+
+  .navbar-collapse {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .navbar-collapse .nav-link,
+  .navbar-collapse .navbar-brand {
+    color: black !important;
+  }
+
+  .navbar-toggler {
+    background-color: white;
+  }
+
+  /* Home */
+  #home {
+    min-height: 100vh;
+    padding: 0 15px;
+  }
+
+  .home-inner h1 {
+    font-size: 36px !important;
+  }
+
+  .home-inner p {
+    font-size: 22px !important;
+  }
+
+  #home .list-unstyled {
+    gap: 8px !important;
+  }
+
+  #home .list-unstyled a {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  /* About */
+  #about {
+    height: auto !important;
+    min-height: 100vh;
+    padding: 80px 15px;
+  }
+
+  #about .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about .image,
+  #about .col-md-6 {
+    width: 100%;
+  }
+
+  .image {
+    margin-bottom: 40px;
+  }
+
+  .profile-image {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+  }
+
+  .image::before {
+    display: none;
+  }
+
+  #about h1 {
+    font-size: 28px !important;
+  }
+
+  #about h2 {
+    font-size: 20px;
+  }
+
+  #about p {
+    font-size: 16px !important;
+    line-height: 1.7;
+  }
+
+  #about .button1,
+  #about .button2 {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  /* Services */
+  #services {
+    height: auto !important;
+    min-height: 100vh;
+    padding: 80px 15px;
+  }
+
+  #services .row {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .samlly {
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+
+  #services .card {
+    width: 100% !important;
+    max-width: 350px;
+    margin: 0 auto 15px !important;
+  }
+
+  #services .card-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Portfolio */
+  #work {
+    padding: 80px 15px 50px !important;
+  }
+
+  #work .nav {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  #work .nav-link {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #work .row {
+    margin-top: 20px !important;
+  }
+
+  #work .col-md-4 {
+    width: 100%;
+  }
+
+  .inner-work {
+    width: 100%;
+  }
+
+  .inner-work img {
+    width: 100%;
+    display: block;
+  }
+
+  /* Testimonials */
+  #client {
+    height: auto !important;
+    min-height: 100vh;
+    padding: 80px 15px;
+  }
+
+  #client .carousel {
+    width: 100%;
+  }
+
+  #client p {
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 0 15px;
+  }
+
+  #client p br {
+    display: none;
+  }
+
+  #client img {
+    width: 80px;
+  }
+
+  /* Statistics */
+  #components {
+    padding: 50px 15px;
+  }
+
+  #components > div {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+    width: 100%;
+  }
+
+  .inn {
+    width: 100%;
+  }
+
+  .icon-com {
+    height: 70px;
+    width: 70px;
+  }
+
+  .inn h1 {
+    font-size: 22px !important;
+  }
+
+  .inn h2 {
+    font-size: 16px !important;
+  }
+
+  /* Team */
+  #team {
+    height: auto !important;
+    min-height: 100vh;
+    padding: 80px 15px;
+  }
+
+  .card-group {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .card {
+    width: 100% !important;
+    max-width: 350px;
+  }
+
+  .card-body h3 {
+    font-size: 22px;
+  }
+
+  .card-body p {
+    font-size: 18px !important;
+  }
+
+  /* Contact */
+  #contact {
+    padding: 80px 15px !important;
+  }
+
+  #contact .row {
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+  }
+
+  #contact .col-lg-4,
+  #contact .col-md-6 {
+    width: 100%;
+  }
+
+  .first-two {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    width: 100%;
+    gap: 15px !important;
+  }
+
+  .first-two input {
+    width: 100% !important;
+  }
+
+  .form-floating {
+    width: 100%;
+  }
+
+  #contact form button {
+    width: 50% !important;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 15px 10px;
+  }
+
+  .copyright {
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+
+/* =========================
+   Small Phone
+========================= */
+
+@media (max-width: 400px) {
+
+  .home-inner h1 {
+    font-size: 30px !important;
+  }
+
+  .home-inner p {
+    font-size: 19px !important;
+  }
+
+  #home .list-unstyled a {
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  #about h1 {
+    font-size: 25px !important;
+  }
+
+  #about h2 {
+    font-size: 18px;
+  }
+
+  #about .button1,
+  #about .button2 {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  #services .card {
+    max-width: 100%;
+  }
+
+  #work .word,
+  #client .word,
+  #team .word,
+  #contact .word {
+    font-size: 30px !important;
+  }
+
+  #contact form button {
+    width: 70% !important;
+  }
+}
