@@ -62,16 +62,42 @@
           <h1 class="fs-1  fw-bold">HELLO</h1>
           <p class="animate fs-3">I Am </p>
           <ul class="list-unstyled d-flex justify-content-center gap-3">
-            <li><a href="#" class="btn btn-outline-light rounded-circle text-white bg-black"><i
-                  class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#" class="btn btn-outline-light rounded-circle text-white bg-black"><i
-                  class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="#" class="btn btn-outline-light rounded-circle text-white bg-black"><i
-                  class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="#" class="btn btn-outline-light rounded-circle text-white bg-black"><i
-                  class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#" class="btn btn-outline-light rounded-circle text-white bg-black"><i
-                  class="fa fa-youtube"></i></a></li>
+
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"
+                class="btn btn-outline-light rounded-circle text-white bg-black">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://twitter.com/" target="_blank"
+                class="btn btn-outline-light rounded-circle text-white bg-black">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/" target="_blank"
+                class="btn btn-outline-light rounded-circle text-white bg-black">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"
+                class="btn btn-outline-light rounded-circle text-white bg-black">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/" target="_blank"
+                class="btn btn-outline-light rounded-circle text-white bg-black">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+
           </ul>
 
         </div>
@@ -113,7 +139,7 @@
           </div>
           <div class="mt-3">
             <button class="btn button1 ">Download CV</button>
-            <button class="btn button2">Contact Me</button>
+            <a href="#contact" class="btn button2">Contact Me</a>
           </div>
         </div>
       </div>
@@ -672,27 +698,27 @@
     </div>
   </footer>
   <script>
-  const navbar = document.querySelector(".navbar");
-  const sections = document.querySelectorAll("section");
+    const navbar = document.querySelector(".navbar");
+    const sections = document.querySelectorAll("section");
 
-  window.addEventListener("scroll", () => {
-    let current = "home";
+    window.addEventListener("scroll", () => {
+      let current = "home";
 
-    sections.forEach((section) => {
-      const top = section.offsetTop - 100;
+      sections.forEach((section) => {
+        const top = section.offsetTop - 100;
 
-      if (window.scrollY >= top) {
-        current = section.id;
+        if (window.scrollY >= top) {
+          current = section.id;
+        }
+      });
+
+      if (current === "home") {
+        navbar.classList.remove("navbar-dark-section");
+      } else {
+        navbar.classList.add("navbar-dark-section");
       }
     });
-
-    if (current === "home") {
-      navbar.classList.remove("navbar-dark-section");
-    } else {
-      navbar.classList.add("navbar-dark-section");
-    }
-  });
-</script>
+  </script>
   <script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
