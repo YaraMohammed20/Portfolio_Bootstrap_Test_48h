@@ -13,7 +13,12 @@
   .navbar .nav-link,
   .navbar .navbar-brand {
     transition: color 0.3s;
+     color: white !important;
   }
+   .navbar.navbar-dark-section .nav-link, .navbar.navbar-dark-section .navbar-brand 
+   {
+     color: black !important;
+    }
   /*home*/
   #home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),

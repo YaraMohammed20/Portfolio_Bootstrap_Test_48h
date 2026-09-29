@@ -671,6 +671,28 @@
       </div>
     </div>
   </footer>
+  <script>
+  const navbar = document.querySelector(".navbar");
+  const sections = document.querySelectorAll("section");
+
+  window.addEventListener("scroll", () => {
+    let current = "home";
+
+    sections.forEach((section) => {
+      const top = section.offsetTop - 100;
+
+      if (window.scrollY >= top) {
+        current = section.id;
+      }
+    });
+
+    if (current === "home") {
+      navbar.classList.remove("navbar-dark-section");
+    } else {
+      navbar.classList.add("navbar-dark-section");
+    }
+  });
+</script>
   <script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
