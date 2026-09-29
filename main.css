@@ -735,7 +735,11 @@
   .image {
     margin-bottom: 40px;
   }
-
+  .image::before {
+    content: "";
+    position: absolute;
+    top: 200%;
+  }
   .profile-image {
     width: 100%;
     max-width: 350px;
