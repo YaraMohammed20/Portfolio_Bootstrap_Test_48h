@@ -1,525 +1,459 @@
 :root {
-    --color-gray: #f1f1f1;
-  }
-  body {
-    padding: 0;
-    margin: 0;
-    font-family: "Inter", sans-serif;
-  }
-  /*nav*/
-  .navbar {
-    transition: background-color 0.3s, color 0.3s;
-  }
-  .navbar .nav-link,
-  .navbar .navbar-brand {
-    transition: color 0.3s;
-     color: white !important;
-  }
-   .navbar.navbar-dark-section .nav-link, .navbar.navbar-dark-section .navbar-brand 
-   {
-     color: black !important;
-    }
-  /*home*/
-  #home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(img/bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  #home .list-unstyled a {
-    display: inline-block;
-    padding: 10px;
-    font-size: 18px;
-    border: 1px solid black;
-  }
-  
-  .home-inner p.animate::after {
-    content: "";
-    animation: type 5s infinite;
-  }
-  @keyframes type {
-    1% {
-      content: "L|";
-    }
-    3% {
-      content: "La|";
-    }
-    5% {
-      content: "Lar|";
-    }
-    7% {
-      content: "Larry|";
-    }
-    9% {
-      content: "Larry |";
-    }
-    11% {
-      content: "Larry D|";
-    }
-    13% {
-      content: "Larry Da|";
-    }
-    15% {
-      content: "Larry Dan|";
-    }
-    17% {
-      content: "Larry Dani|";
-    }
-    19% {
-      content: "Larry Danie|";
-    }
-    21% {
-      content: "Larry Daniel|";
-    }
-    23% {
-      content: "Larry Daniels|";
-    }
-    25% {
-      content: "Larry Daniel|";
-    }
-    27% {
-      content: "Larry Danie|";
-    }
-    29% {
-      content: "Larry Dani|";
-    }
-    31% {
-      content: "Larry Dan|";
-    }
-    33% {
-      content: "Larry Da|";
-    }
-    35% {
-      content: "Larry D|";
-    }
-    37% {
-      content: "Larry |";
-    }
-    39% {
-      content: "Larry|";
-    }
-    41% {
-      content: "Lar|";
-    }
-    43% {
-      content: "La|";
-    }
-    45% {
-      content: "L|";
-    }
-    47% {
-      content: "|";
-    }
-    49% {
-      content: "D|";
-    }
-    51% {
-      content: "De|";
-    }
-    53% {
-      content: "Dev|";
-    }
-    55% {
-      content: "Deve|";
-    }
-    57% {
-      content: "Devel|";
-    }
-    59% {
-      content: "Develo|";
-    }
-    61% {
-      content: "Develop|";
-    }
-    63% {
-      content: "Develope|";
-    }
-    65% {
-      content: "Developer|";
-    }
-    67% {
-      content: "Develope|";
-    }
-    69% {
-      content: "Develop|";
-    }
-    71% {
-      content: "Develo|";
-    }
-    73% {
-      content: "Devel|";
-    }
-    75% {
-      content: "Deve|";
-    }
-    77% {
-      content: "Dev|";
-    }
-    79% {
-      content: "De|";
-    }
-    81% {
-      content: "D|";
-    }
-    83% {
-      content: "|";
-    }
-    85% {
-      content: "D|";
-    }
-    87% {
-      content: "De|";
-    }
-    89% {
-      content: "Des|";
-    }
-    91% {
-      content: "Desi|";
-    }
-    93% {
-      content: "Desig|";
-    }
-    95% {
-      content: "Design|";
-    }
-    97% {
-      content: "Designe|";
-    }
-    99% {
-      content: "Designer|";
-    }
-    100% {
-      content: "Designer|";
-    }
-  }
-  
-  /*about*/
-  #about {
-    background-color: white;
-  }
-  #about:has(.navbar) .navbar {
-    background-color: white;
-    color: black;
-  }
-  
-  #about:has(.navbar) .navbar .nav-link,
-  #about:has(.navbar) .navbar .navbar-brand {
-    color: black;
-  }
-  .imgs img {
-    width: 300px;
-  }
-  .btn {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  
-  .button1 {
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-  }
-  .button1:hover {
-    background-color: white;
-    transition: 0.5s;
-    color: black;
-    border: 2px solid black;
-  }
-  .button2 {
-    color: black;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 5px;
-  }
-  .button2:hover {
-    background-color: black;
-    transition: 0.5s;
-    color: white;
-  }
-  .progress-bar {
-    position: relative;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    line-height: 1.5;
-  }
-  .image::before {
-    content: "";
-    position: absolute;
-    top: 140%;
-    left: 50px;
-    width: 500px;
-    height: 450px;
-    background: radial-gradient(#ccc 2px, transparent 2px);
-    background-size: 10px 10px;
-    z-index: 1;
-    opacity: 50%;
-  }
-  
-  .profile-image {
-    position: relative;
-    z-index: 2;
-    display: block;
-  }
-  /*services*/
-  #services {
-    background-color: var(--color-gray);
-  }
-  #services:has(.navbar) .navbar {
-    background-color: white;
-    color: black;
-  }
-  
-  #services:has(.navbar) .navbar .nav-link,
-  #services:has(.navbar) .navbar .navbar-brand {
-    color: black;
-  }
-  .word::before {
-    opacity: 40%;
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    background: radial-gradient(#ccc 2px, transparent 2px);
-    background-size: 10px 10px;
-    z-index: 1;
-  }
-  #services .icon-container {
-    color: black;
-    border-radius: 50%;
-    border: 1px solid var(--color-gray);
-    background-color: var(--color-gray);
-  }
-  #services .card {
-    border: var(--color-gray);
-    box-shadow: 2px;
-  }
-  #services .card:hover .icon-container {
-    color: white;
-    background-color: black;
-    transition: 0.5s;
-  }
-  /*Portfolio*/
-  #Portfolio {
-    background-color: white;
-  }
-  #Portfolio:has(.navbar) .navbar {
-    background-color: white;
-    color: black;
-  }
-  
-  #Portfolio:has(.navbar) .navbar .nav-link,
-  #Portfolio:has(.navbar) .navbar .navbar-brand {
-    color: black;
-  }
-  .layer {
-    position: absolute;
+  --color-gray: #f1f1f1;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white !important;
+  transition: color 0.3s;
+}
+
+.navbar.navbar-dark-section .nav-link,
+.navbar.navbar-dark-section .navbar-brand {
+  color: black !important;
+}
+
+/* ================= HOME ================= */
+
+#home {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home .list-unstyled a {
+  display: inline-block;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid black;
+}
+
+.home-inner p.animate::after {
+  content: "";
+  animation: type 5s infinite;
+}
+
+@keyframes type {
+  1% { content: "L|"; }
+  3% { content: "La|"; }
+  5% { content: "Lar|"; }
+  7% { content: "Larry|"; }
+  9% { content: "Larry |"; }
+  11% { content: "Larry D|"; }
+  13% { content: "Larry Da|"; }
+  15% { content: "Larry Dan|"; }
+  17% { content: "Larry Dani|"; }
+  19% { content: "Larry Danie|"; }
+  21% { content: "Larry Daniel|"; }
+  23% { content: "Larry Daniels|"; }
+  25% { content: "Larry Daniel|"; }
+  27% { content: "Larry Danie|"; }
+  29% { content: "Larry Dani|"; }
+  31% { content: "Larry Dan|"; }
+  33% { content: "Larry Da|"; }
+  35% { content: "Larry D|"; }
+  37% { content: "Larry |"; }
+  39% { content: "Larry|"; }
+  41% { content: "Lar|"; }
+  43% { content: "La|"; }
+  45% { content: "L|"; }
+  47% { content: "|"; }
+  49% { content: "D|"; }
+  51% { content: "De|"; }
+  53% { content: "Dev|"; }
+  55% { content: "Deve|"; }
+  57% { content: "Devel|"; }
+  59% { content: "Develo|"; }
+  61% { content: "Develop|"; }
+  63% { content: "Develope|"; }
+  65% { content: "Developer|"; }
+  67% { content: "Develope|"; }
+  69% { content: "Develop|"; }
+  71% { content: "Develo|"; }
+  73% { content: "Devel|"; }
+  75% { content: "Deve|"; }
+  77% { content: "Dev|"; }
+  79% { content: "De|"; }
+  81% { content: "D|"; }
+  83% { content: "|"; }
+  85% { content: "D|"; }
+  87% { content: "De|"; }
+  89% { content: "Des|"; }
+  91% { content: "Desi|"; }
+  93% { content: "Desig|"; }
+  95% { content: "Design|"; }
+  97% { content: "Designe|"; }
+  99% { content: "Designer|"; }
+  100% { content: "Designer|"; }
+}
+
+/* ================= ABOUT ================= */
+
+#about {
+  background-color: white;
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+.imgs img {
+  width: 300px;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.button1 {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.button1:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+
+.button2 {
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.button2:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.progress-bar {
+  position: relative;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Removed .image::before completely */
+
+.profile-image {
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+/* ================= SERVICES ================= */
+
+#services {
+  background-color: var(--color-gray);
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+.word::before {
+  opacity: 40%;
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  background: radial-gradient(#ccc 2px, transparent 2px);
+  background-size: 10px 10px;
+  z-index: 1;
+}
+
+#services .icon-container {
+  color: black;
+  border-radius: 50%;
+  border: 1px solid var(--color-gray);
+  background-color: var(--color-gray);
+}
+
+#services .card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#services .card:hover .icon-container {
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+}
+
+/* ================= PORTFOLIO ================= */
+
+#work {
+  background-color: white;
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+.inner-work {
+  position: relative;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.407);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: 0.3s ease;
+  opacity: 0;
+}
+
+.inner-work:hover .layer {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.inner-work img {
+  transition: 0.3s ease;
+}
+
+.inner-work:hover img {
+  transform: scale(1.05);
+}
+
+.layer-content {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+
+#work .list-unstyled:hover i {
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+}
+
+/* ================= CLIENT ================= */
+
+#client {
+  background-color: var(--color-gray);
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+#client img {
+  width: 100px;
+}
+
+.icons i {
+  width: 30px;
+  height: 30px;
+  padding-top: 8px;
+  color: black;
+}
+
+.icons i:hover {
+  color: gray;
+  transition: 0.5s;
+}
+
+#client .carousel-indicators button {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+  color: gray;
+}
+
+/* ================= COMPONENTS ================= */
+
+#components {
+  padding: 80px 0;
+}
+
+#components .icon-com {
+  height: 100px;
+  width: 100px;
+}
+
+/* ================= TEAM ================= */
+
+#team {
+  background-color: var(--color-gray);
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+.card-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+}
+
+.card-img-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.over {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-img-container:hover .over {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-img-container:hover .card-img-top {
+  transform: scale(0.9);
+  transition: all 0.4s ease;
+}
+
+.icon i {
+  color: white;
+  background-color: black;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon i:hover {
+  transform: scale(1.2);
+  color: black;
+  background-color: white;
+}
+
+.card-body {
+  text-align: center;
+  background: #f8f9fa;
+  padding: 15px;
+}
+
+/* ================= CONTACT ================= */
+
+#contact {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.first-two {
+  display: flex;
+  gap: 20px;
+}
+
+.first-two input {
+  width: 35%;
+}
+
+.form-floating {
+  width: 70%;
+}
+
+.form-control:focus {
+  border-color: var(--color-gray);
+  box-shadow: none;
+}
+
+.form-control {
+  background-color: var(--color-gray);
+  padding: 0.375rem 0.75rem;
+  border-radius: 10px;
+}
+
+.contact .btn:hover {
+  background-color: var(--color-gray);
+}
+
+.icon2 {
+  color: black;
+  background-color: var(--color-gray);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#contact .inner:hover .icon2 {
+  color: var(--color-gray);
+  transform: scale(1.2);
+  background-color: black;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.407);
-    overflow: hidden;
     width: 100%;
-    height: 100%;
-    transform: scale(0);
-    transition: 0.3s ease;
-    opacity: 0;
-  }
-  .inner-work:hover .layer {
-    opacity: 1;
-  }
-  .inner-work img {
-    transition: 0.3;
-  }
-  .inner-work:hover img {
-    transform: scale(1);
-    padding: 0;
-  }
-  .layer-cotent {
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: black;
-  }
-  #work .list-unstyled:hover i {
-    color: white;
-    background-color: black;
-    transition: 0.5s;
-  }
-  /*client*/
-  #client {
-    background-color: var(--color-gray);
-  }
-  #client:has(.navbar) .navbar {
-    background-color: white;
-    color: black;
-  }
-  
-  #client:has(.navbar) .navbar .nav-link,
-  #client:has(.navbar) .navbar .navbar-brand {
-    color: black;
-  }
-  #client img {
-    width: 100px;
-  }
-  .icons i {
-    width: 30px;
-    height: 30px;
-    padding-top: 8px;
-    color: black;
-  }
-  .icons i:hover {
-    color: gray;
-    transition: 0.5s;
-  }
-  #client .carousel-indicators button {
-    height: 25px;
-    width: 25px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  .carousel-indicators {
-    bottom: -50;
-    color: gray;
-  }
-  /*components*/
-  #components .icon-com {
-    height: 100px;
-    width: 100px;
-  }
-  /*team*/
-  #team {
-    background-color: var(--color-gray);
-  }
-  #team:has(.navbar) .navbar {
-    background-color: white;
-    color: black;
-  }
-  #team:has(.navbar) .navbar .nav-link,
-  #team:has(.navbar) .navbar .navbar-brand {
-    color: black;
-  }
-  .card .over {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.832);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-  }
-  .card:hover .over {
-    display: flex;
-  }
-  .card {
-    position: relative;
-    overflow: hidden;
-    width: 300px;
-  }
-  .card-group {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  .card-img-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    
-  }
-  .card-img-container:hover .over {
-    opacity: 2;
-    visibility: visible;
-  }
-  .card-img-container:hover .card-img-top{
-    padding: 10px;
-    transform: scale(0.9);
-    transition:all 0.4s  ease 0s;
-  }
-  .card-img-top {
-    width: 100%;
-    height: auto;
-    display: block;
-   
-  }
-  .icon i {
-    color: white;
-    background-color: black;
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  .icon i:hover {
-    transform: scale(1.2);
-    color: black;
-    background-color: white;
-  }
-  .over {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-  }
-  .card-body {
-    text-align: center;
-    background: #f8f9fa;
-    padding: 15px;
-  }
-  /* contact */
-  .first-two input {
-    width: 35%;
-  }
-  .form-floating {
-    width: 70%;
-  }
-  .form-control:focus {
-    border-color: var(--color-gray);
-    box-shadow: none;
-  }
-  .form-control {
-    background-color: var(--color-gray);
-    padding: 0.375rem 0.75rem;
-  
-    border-radius: 10px;
-  }
-  .contact .btn:hover {
-    background-color: var(--color-gray);
-  }
-  .icon2 {
-    color: black;
-    background-color: var(--color-gray);
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  #contact .inner:hover .icon2 {
-    color: var(--color-gray);
-    transform: scale(1.2);
-    background-color: black;
-  }
-  
-/* =========================
-   Tablet
-========================= */
+    padding: 20px 10px;
+    background-color: #1c1c1c;
+    z-index: 1000;
+}
+.copyright {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
 
 @media (max-width: 991.98px) {
 
   /* Navbar */
+
   .navbar .container {
     gap: 0 !important;
   }
@@ -528,6 +462,7 @@
     background-color: white;
     padding: 15px;
     margin-top: 10px;
+    border-radius: 5px;
   }
 
   .navbar-collapse .nav-link,
@@ -539,9 +474,12 @@
     color: black !important;
   }
 
+
   /* Home */
+
   #home {
     min-height: 100vh;
+    height: auto;
   }
 
   .home-inner h1 {
@@ -552,32 +490,30 @@
     font-size: 28px !important;
   }
 
+
   /* About */
+
   #about {
     min-height: auto;
-    padding: 100px 0;
+    height: auto;
+    padding: 100px 20px;
   }
 
   .image {
     margin-bottom: 50px;
   }
 
-  .image::before {
-    top: 80%;
-    left: 20px;
-    width: 350px;
-    height: 350px;
-  }
-
   .imgs img {
     width: 100%;
   }
 
+
   /* Services */
+
   #services {
     height: auto !important;
-    min-height: 100vh;
-    padding: 100px 0;
+    min-height: auto;
+    padding: 100px 20px;
   }
 
   #services .row {
@@ -585,32 +521,46 @@
   }
 
   .samlly {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
+    gap: 20px;
   }
 
   #services .card {
     width: 18rem !important;
   }
 
+
   /* Portfolio */
+
   #work {
-    padding-top: 100px !important;
+    height: auto;
+    min-height: auto;
+    padding: 100px 20px !important;
   }
 
+
   /* Testimonials */
+
   #client {
+    height: auto !important;
     min-height: auto;
     padding: 100px 20px;
   }
 
+
   /* Statistics */
+
   #components {
-    padding: 50px 20px;
+    height: auto;
+    padding: 70px 20px;
   }
 
   #components > div {
     flex-wrap: wrap !important;
+    justify-content: center;
     gap: 30px !important;
   }
 
@@ -618,42 +568,80 @@
     width: 40%;
   }
 
+
   /* Team */
+
   #team {
     height: auto !important;
-    padding: 100px 0;
+    min-height: auto !important;
+    padding: 100px 20px !important;
+  }
+
+  #team .container {
+    height: auto !important;
   }
 
   .card-group {
+    width: 100%;
+    height: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     gap: 25px;
   }
 
-  .card {
-    width: 280px;
+  #team .card {
+    width: 280px !important;
+    height: auto !important;
+    flex: 0 0 auto;
   }
 
+  #team .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+
+
   /* Contact */
+
   #contact {
+    height: auto !important;
+    min-height: auto !important;
     padding: 80px 20px !important;
   }
 
+  #contact .row {
+    height: auto !important;
+  }
+
   .first-two {
-    flex-wrap: wrap !important;
+    width: 100%;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 15px !important;
   }
 
   .first-two input {
-    width: 50%;
+    width: 50% !important;
   }
 
   .form-floating {
+    width: 100% !important;
+  }
+
+  #contact form {
     width: 100%;
   }
+
+  #contact textarea {
+    width: 100%;
+  }
+
+  #contact form button {
+    margin-top: 10px;
+  }
 }
-
-
-/* =========================
-   Phone
-========================= */
 
 @media (max-width: 767.98px) {
 
@@ -735,11 +723,7 @@
   .image {
     margin-bottom: 40px;
   }
-  .image::before {
-    content: "";
-    position: absolute;
-    top: 200%;
-  }
+
   .profile-image {
     width: 100%;
     max-width: 350px;
@@ -960,11 +944,6 @@
     margin: 0;
   }
 }
-
-
-/* =========================
-   Small Phone
-========================= */
 
 @media (max-width: 400px) {
 
